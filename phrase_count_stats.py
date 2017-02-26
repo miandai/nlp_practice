@@ -20,6 +20,7 @@ def get_highfreq_wordtuple(file_path,top_n=10,min_char_count=1):
     wordsorted = sorted(worddics.items(), key=lambda e:e[1], reverse=True)
     return wordsorted[0:top_n-1]
 
+# Example
 filepath = "./Data/happiness_seg.txt"
 topn=10
 wordsorted=get_highfreq_wordtuple(filepath,topn,2)
