@@ -5,7 +5,7 @@ phrase\_count\_stats.py 中 get\_highfreq\_wordtuple 函数实现了统计文本
 get\_highfreq\_wordtuple 参数如下：
 
 - file\_path：文件路径
-- top\_n：要输出频率最高的 top_n 个词组
+- top\_n：输出频率最高的 top_n 个词组
 - min\_char\_count：至少多少个字才算词
 
 /Data/happiness_seg.txt 中出现频率最高的前 10 个二元词组（1 个字也算词）：
