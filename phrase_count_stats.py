@@ -13,7 +13,7 @@ def get_highfreq_wordtuple(file_path,top_n=10,min_char_count=1):
         lenrange = range(len(wordlist)-1)
         for i in lenrange:
             if len(wordlist[i])>=min_char_count and len(wordlist[i+1])>=min_char_count \
-            and check_contain_chinese(wordlist[i]) and check_contain_chinese(wordlist[i+1]):
+            and check_all_chinese(wordlist[i]) and check_all_chinese(wordlist[i+1]):
                 wordtuple = wordlist[i]+" "+wordlist[i+1]
                 worddics.setdefault(wordtuple,0)
                 worddics[wordtuple]+=1
