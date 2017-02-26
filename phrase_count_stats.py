@@ -1,4 +1,4 @@
-def check_contain_chinese(check_str):
+def check_all_chinese(check_str):
     for ch in check_str:
         if ch < u'\u4e00' or ch > u'\u9fff':
             return False
